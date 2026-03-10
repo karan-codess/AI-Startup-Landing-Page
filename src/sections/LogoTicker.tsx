@@ -6,6 +6,7 @@ import quantumLogo from "@/assets/logo-quantum.png";
 import pulselLogo from "@/assets/logo-pulse.png";
 import echoLogo from "@/assets/logo-echo.png";
 import {motion} from "framer-motion"
+import Image from "next/image";
 
 export const LogoTicker = () => {
   return (
@@ -42,7 +43,7 @@ export const LogoTicker = () => {
                 celestialLogo,
                 
               ].map((logo) => (
-                <img
+                <Image
                   src={logo.src}
                   key={logo.src}
                   alt=""
